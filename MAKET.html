@@ -3,13 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylysheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>CPS</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="upper-menu">
+            <button class="upper-menu__burger"><img src="./assets/burger.svg" alt="Бургер"></button>  
+            <button class="upper-menu__logo"><img src="./assets/Group.svg" alt="Логотип"></button>
+            <div class="upper-menu__divider"></div>
+            <button class="upper-menu__repair"><img src="./assets/repair.svg" alt="Ремонт"></button>
+            <button class="upper-menu__checkstatus"><img src="./assets/checkstatus.svg" alt=""></button>
+        </div>
+    </header>
     <main>
-        <h1>Услуги и сервисы</h1>
+        <div class="title">
+            <img class="title__highlight" src="./assets/highlight.svg" alt="Палочка">
+            <h1 class="title__text">Услуги и сервисы</h1>
+        </div>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item navigation__item--choosen">Ремонтируемые устройства</li>
+                <li class="navigation__item">Дополнительные услуги</li>
+            </ul>
+        </nav>
+        <div class="info">
+            <p class="info__text">
+            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+            </p>
+            <button class="button-more">
+                <img class="button-more__arrows" src="./assets/ic-expand.svg" alt="Стрелки">
+                <p class="button-more__text">Читать далее</p>
+            </button>
+        </div>
+        <div class="tablet"><img class="tablet__photo" src="./assets/image-cps.png" alt="Табличка CPS"></div>
     </main>
     <footer></footer>
 </body>
