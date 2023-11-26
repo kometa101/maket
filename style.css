@@ -93,6 +93,7 @@ button {
 
 .info {
     width: 288px;
+    height: 90px;
     margin: 24px 16px 16px 16px;
     color: #1B1C21;
     font-family: "TTLakes-Light";
@@ -100,13 +101,23 @@ button {
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0.2px;
+    overflow: hidden;
 }
 
-.button-more {
+.more {
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.more__button {
     display: flex;
     column-gap: 8px;
     align-items: center;
     margin-top: 16px;
+}
+
+.more__text {
+    font-weight: 700;
 }
 
 .tablet__photo {
