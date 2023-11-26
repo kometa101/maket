@@ -85,7 +85,7 @@ button {
     letter-spacing: -0.2px;
 }
 
-.navigation__item--choosen {
+.navigation__item--chosen {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: #FFF;
