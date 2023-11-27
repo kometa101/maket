@@ -58,6 +58,22 @@ button {
     height: 32px;
 }
 
+.upper-menu__divider--second {
+    display: none;
+}
+
+.upper-menu__call {
+    display: none;
+}
+
+.upper-menu__chat {
+    display: none;
+}
+
+.upper-menu__profile {
+    display: none;
+}
+
 .title {
     display: flex;
     column-gap: 12px;
@@ -81,6 +97,7 @@ button {
 
 .navigation__item {
     font-weight: 500;
+    text-wrap: nowrap;
     padding: 8px 9.3px 8px 16.54px;
     letter-spacing: -0.2px;
 }
@@ -104,7 +121,9 @@ button {
     overflow: hidden;
 }
 
+
 .more {
+    margin-top: 16px;
     margin-left: 16px;
     margin-bottom: 16px;
 }
@@ -113,7 +132,6 @@ button {
     display: flex;
     column-gap: 8px;
     align-items: center;
-    margin-top: 16px;
 }
 
 .more__text {
@@ -123,4 +141,88 @@ button {
 .tablet__photo {
     width: 320px;
     height: auto;
+}
+
+@media (width: 784px) and (height: 504px)  {
+    body {
+        width: 784px;
+    }
+
+    .header {
+        margin-bottom: 24px;
+    }
+
+    .upper-menu__burger {
+        order: -2;
+    }
+
+    .upper-menu__divider--first {
+        order: -1;
+    }
+
+    .upper-menu__logo {
+        margin-right: 250.73px;
+    }
+
+    .upper-case__call {
+        display: block;
+    }
+
+    .upper-menu__chat {
+        display: block;
+    }
+
+    .upper-menu__profile {
+        display: block;
+    }
+
+    .upper-menu__divider--second {
+        display: block;
+    }
+
+    .title {
+        column-gap: 20px;
+    }
+
+    .navigation__list {
+        width: 776px;       
+        height: 40px;
+        column-gap: 0;
+        margin-bottom: 32px;
+    }
+
+    .navigation__item {
+        margin-right: 16px;
+    }
+
+    .description {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .info {
+        /* margin: 0; */
+        width: 312px;
+        height: 160px;
+        margin-top: 0;
+        white-space: pre-line;
+    }
+
+    .info__text {
+        height: 160px;
+        overflow: hidden;
+    }
+
+    .more {
+        width: 132px;
+    }
+
+    .tablet {
+        margin-top: 40px;
+    }
+
+    .tablet__photo {
+        border-radius: 10px;
+    }
+
 }
