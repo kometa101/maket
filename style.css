@@ -195,13 +195,11 @@ button {
         margin-right: 16px;
     }
 
-    .description {
+    .desription {
         display: flex;
-        justify-content: space-around;
     }
 
     .info {
-        /* margin: 0; */
         width: 312px;
         height: 160px;
         margin-top: 0;
