@@ -197,6 +197,10 @@ button {
 
     .desription {
         display: flex;
+        flex-flow: column wrap;
+        column-gap: 48px;
+        width: 720px;
+        height: 290px;
     }
 
     .info {
@@ -208,7 +212,6 @@ button {
 
     .info__text {
         height: 160px;
-        overflow: hidden;
     }
 
     .more {
