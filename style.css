@@ -81,6 +81,11 @@ button {
 
 .title__text {
     font-family: "TTLakes-Bold";
+    font-size: 27px;
+}
+
+.top-panel__buttons {
+    display: none;
 }
 
 .navigation {
@@ -102,10 +107,30 @@ button {
     letter-spacing: -0.2px;
 }
 
-.navigation__item--chosen {
+.navigation__item--first {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: #FFF;
+}
+
+.navigation__item--second {
+    display: none;
+}
+
+.navigation__item--fourth {
+    display: none;
+}
+
+.navigation__item--fifth {
+    display: none;
+}
+
+.navigation__item--sixth {
+    display: none;
+}
+
+.navigation__item--seventh {
+    display: none;
 }
 
 .info {
@@ -143,7 +168,7 @@ button {
     height: auto;
 }
 
-@media (width: 784px) and (height: 504px)  {
+@media (784px <= width < 1121px ) and (504px <= height < 535px)  {
     body {
         width: 784px;
     }
@@ -184,15 +209,28 @@ button {
         column-gap: 20px;
     }
 
+    .title__text {
+        font-size: 25px;
+    }
+
     .navigation__list {
         width: 776px;       
         height: 40px;
         column-gap: 0;
+        margin-top: 15px;
         margin-bottom: 32px;
     }
 
     .navigation__item {
         margin-right: 16px;
+    }
+
+    .navigation__item--fourth {
+        display: block;
+    }
+
+    .navigation__item--sixth {
+        display: block;
     }
 
     .desription {
@@ -205,25 +243,159 @@ button {
 
     .info {
         width: 312px;
-        height: 160px;
+        height: 165px;
         margin-top: 0;
+        margin-bottom: 10px;
         white-space: pre-line;
     }
 
     .info__text {
         height: 160px;
+        margin-top: 20px;
     }
 
     .more {
         width: 132px;
+        margin-top: 0;
     }
 
     .tablet {
-        margin-top: 40px;
+        margin-top: 35px;
     }
 
     .tablet__photo {
+        width: 360px;
+        height: auto;    
         border-radius: 10px;
     }
 
+}
+
+@media (width >= 1121px) and (height >= 535px) {
+    body {
+        background-color: #F8F8F8;
+    }
+
+    header {
+        display: none;
+        height: 0;
+    }
+
+    .top-panel {
+        display: flex;
+        margin-top: 42px;
+        margin-bottom: 17px;
+    }
+
+    .top-panel__buttons {
+        display: flex;
+        font-weight: 700;
+        column-gap: 32px;
+    }
+
+    .top-panel__repair {
+        display: flex;
+        column-gap: 8px;
+        align-items: center;
+    }
+
+    .top-panel__status {
+        display: flex;
+        column-gap: 8px;
+        align-items: center;
+    }
+
+    .top-panel {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 22px;
+    }
+
+    .title {
+        height: 40px;
+        column-gap: 30px;
+        align-items: center;
+    }
+
+    .title__text {
+        font-size: 26.5px;
+        margin: 0;
+    }
+
+    .navigation {
+        width: auto;
+        height: 80px;
+        margin-left: 32px;
+    }
+
+    .navigation__list {
+        flex-wrap: wrap;
+    }
+
+    .navigation__item--first {
+        background: none;
+        border: none;
+    }
+
+    .navigation__item--second {
+        display: block;
+        order: -1;
+        padding-right: 22px;
+        padding-left: 23px;
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+        background-color: #FFF;
+    }
+
+    .navigation__item--third {
+        display: none;
+    }
+
+    .navigation__item--fourth {
+        display: block;
+    }
+
+    .navigation__item--fifth {
+        display: block;
+    }
+
+    .navigation__item--sixth {
+        display: block;
+    }
+
+    .navigation__item--seventh {
+        display: block;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding-bottom: 0;
+    }
+
+    .desription {
+        display: flex;
+        column-gap: 36px;
+    }
+
+    .info {
+        white-space: pre-line;
+        width: 490px;
+        height: 160px;
+        margin-top: 0;
+        margin-left: 32px;
+        margin-bottom: 13px;
+    }
+
+    .more {
+        margin-top: 0;
+        margin-left: 32px;
+    }
+    
+    .tablet {
+        margin-top: 5px;
+    }
+
+    .tablet__photo {
+        width: 520px;
+        height: auto;
+        border-radius: 5px;
+    }
 }
