@@ -313,6 +313,7 @@ button, a {
 
     .navigation__list {
         flex-wrap: wrap;
+        overflow: hidden;
     }
 
     .navigation__item--first {
