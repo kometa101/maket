@@ -313,7 +313,7 @@ button, a {
 
     .navigation__list {
         flex-wrap: wrap;
-        overflow: hidden;
+        row-gap: 5px;
     }
 
     .navigation__item--first {
@@ -338,7 +338,6 @@ button, a {
 
     .navigation__item--seventh {
         display: block;
-        margin-top: 5px;
         margin-left: 5px;
         padding-bottom: 0;
     }
