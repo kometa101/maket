@@ -31,7 +31,7 @@ main {
     background-color: #F8F8F8;
 }
 
-button {
+button, a {
     padding: 0;
     border: none;
     font: inherit;
@@ -89,7 +89,7 @@ button {
 }
 
 .navigation {
-    width: 504px;
+    width: 300px;
     height: 40px;
     margin-left: 16px;
 }
@@ -98,6 +98,7 @@ button {
     display: flex;
     list-style-type: none;
     column-gap: 19.56px;
+    overflow: scroll;
 }
 
 .navigation__item {
