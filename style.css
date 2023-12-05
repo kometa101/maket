@@ -314,6 +314,7 @@ button, a {
     .navigation__list {
         flex-wrap: wrap;
         row-gap: 5px;
+        overflow: hidden;
     }
 
     .navigation__item--first {
