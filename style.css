@@ -140,7 +140,6 @@ button, a {
     overflow: hidden;
 }
 
-
 .more {
     margin-top: 16px;
     margin-left: 16px;
@@ -164,6 +163,7 @@ button, a {
 }
 
 .tablet__photo {
+    align: right;
     width: 320px;
     height: auto;
 }
@@ -219,12 +219,11 @@ button, a {
         margin-right: 16px;
     }
 
+    
     .desription {
-        display: flex;
-        flex-flow: column wrap;
-        column-gap: 48px;
-        width: 720px;
+    display: flex;
     }
+
 
     .description__info {
         width: 50%;
@@ -244,20 +243,15 @@ button, a {
         margin-top: 0;
     }
 
-    .tablet {
-        width: 50%;
-        margin-top: 35px;
-    }
-
     .tablet__photo {
-        width: 360px;
-        height: auto;    
+        width: 50%;
+        height: auto;   
         border-radius: 10px;
     }
 
 }
 
-@media (width >= 1121px) {
+@media (width >= 1120px) {
     body {
         background-color: #F8F8F8;
     }
@@ -350,8 +344,6 @@ button, a {
     }
 
     .info {
-        white-space: pre-line;
-        width: 490px;
         height: 160px;
         margin-top: 0;
         margin-left: 32px;
@@ -363,13 +355,8 @@ button, a {
         margin-left: 32px;
     }
     
-    .tablet {
-        margin-top: 5px;
-    }
-
     .tablet__photo {
-        width: 520px;
-        height: auto;
-        border-radius: 5px;
+        width: auto;
+        border-radius: 10px;
     }
 }
