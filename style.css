@@ -85,8 +85,8 @@ button, a {
 }
 
 .title__text:before {
-    content: url(/assets/highlight.svg);
-    background: url(/assets/highlight.svg);
+    content: url(./assets/highlight.svg);
+    background: url(./assets/highlight.svg);
     float: left;
     height: 40px;
     margin-right: 12px;
@@ -157,7 +157,7 @@ button, a {
 }
 
 .more__text:before {
-    content: url(/assets/ic-expand.svg);
+    content: url(./assets/ic-expand.svg);
     float: left;
     margin-right: 8px;
 }
