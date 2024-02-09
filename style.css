@@ -23,11 +23,12 @@ p {
 }
 
 header {
+    background-color: #fff;
     height: 88px;
     border-bottom: 1px solid #D9FFF5;
 }
 
-main {
+body {
     background-color: #F8F8F8;
 }
 
@@ -128,6 +129,7 @@ button, a {
     background-color: #FFF;
 }
 
+
 .info {
     height: 90px;
     margin: 24px 16px 16px 16px;
@@ -147,24 +149,20 @@ button, a {
 }
 
 .more__button {
-    display: flex;
-    column-gap: 8px;
-    align-items: center;
-}
-
-.more__text {
     font-weight: 700;
 }
 
-.more__text:before {
+.more__button:before {
     content: url(./assets/ic-expand.svg);
     float: left;
-    margin-right: 8px;
 }
 
 .tablet__photo {
+    background-image: url(./assets/img-cps.png);
     width: 320px;
-    height: auto;
+    height: 217px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 @media (width >= 784px)  {
@@ -243,18 +241,13 @@ button, a {
     }
 
     .tablet__photo {
-        width: 50%;
-        height: auto;   
+        width: 360px;
         border-radius: 10px;
     }
 
 }
 
 @media (width >= 1120px) {
-    body {
-        background-color: #F8F8F8;
-    }
-
     header {
         display: none;
         height: 0;
@@ -355,7 +348,8 @@ button, a {
     }
     
     .tablet__photo {
-        width: auto;
+        width: 530px;
+        height: 307px;
         border-radius: 10px;
     }
 }
