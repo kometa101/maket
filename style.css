@@ -22,14 +22,14 @@ p {
     font-family: "TTLakes";
 }
 
+body {
+    background-color: #F8F8F8;
+}
+
 header {
     background-color: #fff;
     height: 88px;
     border-bottom: 1px solid #D9FFF5;
-}
-
-body {
-    background-color: #F8F8F8;
 }
 
 button, a {
@@ -45,11 +45,6 @@ button, a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.upper-menu__logo {
-    margin-top: 18.59px;
-    margin-bottom: 18.59px;
 }
 
 .upper-menu__divider {
@@ -97,12 +92,9 @@ button, a {
     display: none;
 }
 
-.navigation {
-    margin-left: 16px;
-}
-
 .navigation__list {
     display: flex;
+    margin-left: 16px;
     list-style-type: none;
     column-gap: 19.56px;
     overflow: scroll;
@@ -158,10 +150,6 @@ button, a {
 }
 
 @media (width >= 784px)  {
-    .header {
-        margin-bottom: 24px;
-    }
-
     .upper-menu__burger {
         order: -2;
     }
@@ -200,7 +188,6 @@ button, a {
 
     .navigation__list {
         column-gap: 0;
-        margin-top: 15px;
         margin-bottom: 32px;
     }
 
@@ -240,9 +227,8 @@ button, a {
 }
 
 @media (width >= 1120px) {
-    header {
+    .upper-menu {
         display: none;
-        height: 0;
     }
 
     .top-panel {
@@ -286,14 +272,9 @@ button, a {
         margin: 0;
     }
 
-    .navigation {
-        margin-left: 32px;
-    }
-
     .navigation__list {
         flex-wrap: wrap;
         row-gap: 5px;
-        overflow: hidden;
     }
 
     .navigation__item--first {
