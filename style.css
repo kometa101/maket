@@ -1,6 +1,6 @@
 @font-face {
-    font-family: TTLakes-Light;
-    src: url(./TTLakes/TTLakes-Light.ttf);
+    font-family: TTLakes;
+    src: url(./TTLakes/TTLakes-Regular.ttf);
 }
 
 @font-face {
@@ -19,7 +19,7 @@ p {
 }
 
 * {
-    font-family: "TTLakes-Light";
+    font-family: "TTLakes";
 }
 
 header {
@@ -115,15 +115,7 @@ button, a {
     letter-spacing: -0.2px;
 }
 
-.navigation__item--first {
-    order: -2;
-}
-
-.navigation__item--third {
-    order: -1;
-}
-
-.navigation__item--first {
+.navigation__item--active {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: #FFF;
