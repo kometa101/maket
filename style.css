@@ -1,12 +1,25 @@
 @font-face {
     font-family: TTLakes;
-    src: url(./TTLakes/TTLakes-Regular.ttf);
+    src: url(./TTLakes/TTLakes-Light.ttf);
+    font-weight: 100;
 }
 
 @font-face {
-    font-family: TTLakes-Bold;
+    font-family: TTLakes;
+    src: url(./TTLakes/TTLakes-Regular.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: TTLakes;
+    src: url(./TTLakes/TTLakes-DemiBold.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: TTLakes;
     src: url(./TTLakes/TTLakes-Bold.ttf);
-    
+    font-weight: 700;
 }
 
 html,
@@ -14,12 +27,9 @@ body,
 ul,
 li,
 p {
+    font-family: "TTLakes";
     margin: 0;
     padding: 0;
-}
-
-* {
-    font-family: "TTLakes";
 }
 
 body {
@@ -47,6 +57,18 @@ button, a {
     align-items: center;
 }
 
+.upper-menu__burger {
+    width: 40px;
+    height: 40px;
+    background-image: url(./assets/burger.svg);
+}
+
+.upper-menu__logo {
+    width: 98px;
+    height: 52px;
+    background-image: url(./assets/Group.svg);
+}
+
 .upper-menu__divider {
     background: #EAEAEA;
     border-radius: 1px;
@@ -60,14 +82,35 @@ button, a {
 
 .upper-menu__call {
     display: none;
+    background-image: url(./assets/call.svg);
+    width: 40px;
+    height: 40px;
 }
 
 .upper-menu__chat {
     display: none;
+    background-image: url(./assets/chat.svg);
+    width: 40px;
+    height: 40px;
 }
 
 .upper-menu__profile {
     display: none;
+    background-image: url(./assets/profile.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.upper-menu__repair {
+    width: 40px;
+    height: 40px;
+    background-image: url(./assets/repair.svg);
+}
+
+.upper-menu__checkstatus {
+    width: 40px;
+    height: 40px;
+    background-image: url(./assets/checkstatus.svg);
 }
 
 .title {
@@ -76,8 +119,8 @@ button, a {
 }
 
 .title__text {
-    font-family: "TTLakes-Bold";
-    font-size: 27px;
+    font-weight: bold;
+    font-size: 28px;
 }
 
 .title__text:before {
@@ -92,16 +135,33 @@ button, a {
     display: none;
 }
 
+.top-panel__repair {
+    width: 173px;
+    height: 40px;
+    background-image: url(./assets/repair.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.top-panel__status {
+    width: 173px;
+    height: 40px;
+    background-image: url(./assets/checkstatus.svg);
+    background-repeat: no-repeat;
+    background-position: 130px;
+}
+
 .navigation__list {
     display: flex;
     margin-left: 16px;
+    margin-bottom: 10px;
     list-style-type: none;
     column-gap: 19.56px;
     overflow: scroll;
 }
 
 .navigation__item {
-    font-weight: 500;
+    font-weight: 100;
     text-wrap: nowrap;
     padding: 8px 9.3px 8px 16.54px;
     letter-spacing: -0.2px;
@@ -116,24 +176,23 @@ button, a {
 
 .info {
     height: 90px;
-    margin: 24px 16px 16px 16px;
     color: #1B1C21;
-    font-family: "TTLakes-Light";
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 18px;
     letter-spacing: 0.2px;
     overflow: hidden;
 }
 
-.more {
-    margin-top: 16px;
-    margin-left: 16px;
-    margin-bottom: 16px;
+.info__text {
+    margin-left: 25px;
 }
 
 .more__button {
-    font-weight: 700;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
 }
 
 .more__button:before {
@@ -239,7 +298,7 @@ button, a {
 
     .top-panel__buttons {
         display: flex;
-        font-weight: 700;
+        font-weight: 500;
         column-gap: 32px;
     }
 
@@ -253,12 +312,12 @@ button, a {
         display: flex;
         column-gap: 8px;
         align-items: center;
+        margin-right: 22px;
     }
 
     .top-panel {
         display: flex;
         justify-content: space-between;
-        margin-right: 22px;
     }
 
     .title {
@@ -311,14 +370,6 @@ button, a {
 
     .info {
         height: 160px;
-        margin-top: 0;
-        margin-left: 32px;
-        margin-bottom: 13px;
-    }
-
-    .more {
-        margin-top: 0;
-        margin-left: 32px;
     }
     
     .tablet__photo {
